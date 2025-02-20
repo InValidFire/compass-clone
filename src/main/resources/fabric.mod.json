@@ -1,41 +1,30 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "compass_clone",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Compass Clone",
+	"description": "Copy your lodestone compasses with amethyst!",
 	"authors": [
-		"Me!"
+		"embers_gleam (Ember)"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/compass-clone",
+		"sources": "https://github.com/InValidFire/compass-clone"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/compass_clone/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
+			"gay.quack.CompassClone"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
